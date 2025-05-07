@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Code Generator | Hugging Face + Flask</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini API Demo</title>
+    <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>AI Code Generator</h1>
-    <textarea id="prompt" placeholder="Enter your prompt here... (e.g., Write Python code for linear search)"></textarea>
-    <button onclick="generateCode()">Generate Code</button>
-    <div id="loader" style="display: none;">Generating...</div>
-    <pre id="output"></pre>
-    <div id="error"></div>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Gemini AI Demo</h1>
+        <div class="input-container">
+            <textarea id="prompt" placeholder="Enter your prompt here..." required></textarea>
+            <button id="generate">Generate</button>
+        </div>
+        <div id="output" class="output"></div>
+        <div id="loading" class="loading" style="display: none;">Processing...</div>
+    </div>
+
+    <script src="public/main.js"></script>
 </body>
 </html>
